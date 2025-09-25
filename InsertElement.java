@@ -43,8 +43,23 @@ public class InsertElement {
 //        numbersOfTable[newIndex] = newElement;
 //        System.out.println( "after insertion " + Arrays.toString(numbersOfTable));
 
+        int[] points = new int[5];
+        points[0] = 1;
+        points[1] = 2;
+        points[2] = 3;
+        points[3] = 4;
+        System.out.println(Arrays.toString(points));
 
-        
+        int index = 1;
+        int element = 100;
+
+        for (int i = points.length - 1; i > index; i--) {
+            points[i] = points[i - 1];
+        }
+        points[index] = element;
+        System.out.println(Arrays.toString(points));
+
+
 
 
 
